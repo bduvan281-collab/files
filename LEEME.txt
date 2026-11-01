@@ -1,0 +1,15 @@
+CALMAT - cómo ejecutarlo
+========================
+1. Instalar Node.js (https://nodejs.org), versión 16 o superior.
+2. Abrir una terminal dentro de esta carpeta.
+3. Ejecutar:   node server.js
+4. Abrir en el navegador:   http://localhost:3000
+   (NO abrir index3.html con doble clic: así no hay conexión con el backend).
+
+Los usuarios y los cálculos se guardan en  data/db.json  (se crea solo).
+Las contraseñas se guardan cifradas.
+
+Perfiles:
+- Administrador: usa todo el menú, ve el historial de TODOS los usuarios
+  (el profesor debe registrarse con este perfil) y la lista de usuarios.
+- Constructor y Cliente: opciones 1 a 7 y su propio historial.

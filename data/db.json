@@ -1,0 +1,17 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "duvan nicolas prieto barrera",
+      "email": "bduvan281@gmail.com",
+      "perfil": "constructor",
+      "clave": "be06e80d3b5960f3da297b27527e4e7d:47f5375b1ebf822d91e4d71d49d22a2fd97fa89c9b9f0fe6923d64279b116181bc09372f8f2e330e4ee74bb1381ffdd39e34f642b41715a4d2f1df282648942f",
+      "creado": "2026-11-01T23:03:21.080Z"
+    }
+  ],
+  "calculos": [],
+  "sesiones": {
+    "313b9feea2e4aadd98293308be4b7c27b54348ac4fb3f49e": 1
+  },
+  "siguienteId": 2
+}

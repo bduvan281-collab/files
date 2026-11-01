@@ -1,0 +1,208 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #F0F2F5;
+}
+
+header {
+    width: 100%;
+    height: 11vh;
+    background-color: #5176ae;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+h1 {
+    color: #fff;
+}
+
+header i {
+    color: #fff;
+    font-size: 2rem;
+    margin-right: 2vw;
+    position: absolute;
+    right: 0;
+}
+
+/* LOGO */
+
+.logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 100%;
+    min-height: 79vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FORMULARIO */
+
+.form-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    width: 300px;
+    max-width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    width: 200px;
+    min-height: 40px;
+    background-color: #5A51AE;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    margin: 5px;
+}
+
+.btn:hover {
+    background-color: #1fb5c6;
+}
+
+a {
+    margin: 15px;
+    text-decoration: none;
+}
+
+/* MENÚ */
+
+#menu h2 {
+    margin-bottom: 20px;
+    color: #5176ae;
+    text-align: center;
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    text-align: center;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+/* BOTONES DEL RESULTADO */
+
+#resultado button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #5A51AE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* REGISTRO / MENSAJES */
+
+#registro {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+select.inputs {
+    background-color: #fff;
+}
+
+.mensaje {
+    min-height: 20px;
+    font-size: 0.9rem;
+    color: #c0392b;
+    text-align: center;
+}
+
+.mensaje.ok {
+    color: #1e8449;
+}
+
+#perfilActual {
+    margin-bottom: 15px;
+    color: #555;
+    text-transform: capitalize;
+}
+
+#resultado h3 {
+    color: #5176ae;
+    margin-bottom: 8px;
+}
+
+/* HISTORIAL */
+
+.hist-item {
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    line-height: 1.5;
+}
+
+.hist-item small {
+    color: #777;
+}
+
+/* HISTORIAL */
+
+.hist-item {
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+.hist-item strong {
+    color: #5176ae;
+}
+
+.hist-item small {
+    color: #777;
+}

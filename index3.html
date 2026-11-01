@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CALMAT</title>
+
+    <meta name="description" content="Calculadora de materiales de construccion">
+    <meta name="keywords" content="calmat, calculadora de materiales">
+    <meta name="author" content="Duvan Nicolás Prieto y Miller Aragonez">
+
+    <link rel="shortcut icon" href="CALMAT2.png">
+    <link rel="stylesheet" href="estilos3.css">
+
+    <script src="https://kit.fontawesome.com/9d1a86738f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>calmat</h1>
+        <i class="fa-solid fa-bars"></i>
+    </header>
+
+    <main>
+
+        <!-- INICIO DE SESIÓN -->
+        <section id="login">
+
+            <img class="logo" src="CALMAT2.png" alt="calmat">
+
+            <form class="form-login" id="formulario">
+                <input class="inputs" type="email" id="email" placeholder="Correo electrónico:"
+                    maxlength="60" title="Introduce tu correo" required>
+
+                <input class="inputs" type="password" id="password" placeholder="Contraseña:"
+                    maxlength="40" minlength="6" title="Introduce tu contraseña" required>
+
+                <input class="btn" type="submit" value="Entrar">
+            </form>
+
+            <p class="mensaje" id="mensajeLogin"></p>
+
+            <a href="#" id="irRegistro">¿No tienes cuenta? Regístrate</a>
+
+        </section>
+
+
+        <!-- REGISTRO -->
+        <section id="registro" style="display: none;">
+
+            <img class="logo" src="CALMAT2.png" alt="calmat">
+
+            <form class="form-login" id="formRegistro">
+                <input class="inputs" type="text" id="regNombre" placeholder="Nombre completo:"
+                    maxlength="50" minlength="2" required>
+
+                <input class="inputs" type="email" id="regEmail" placeholder="Correo electrónico:"
+                    maxlength="60" required>
+
+                <input class="inputs" type="password" id="regPassword" placeholder="Contraseña (mínimo 6):"
+                    maxlength="40" minlength="6" required>
+
+                <input class="inputs" type="password" id="regPassword2" placeholder="Confirmar contraseña:"
+                    maxlength="40" minlength="6" required>
+
+                <select class="inputs" id="regPerfil" required>
+                    <option value="" disabled selected>Selecciona tu perfil</option>
+                    <option value="administrador">Administrador</option>
+                    <option value="constructor">Constructor</option>
+                    <option value="cliente">Cliente</option>
+                </select>
+
+                <input class="btn" type="submit" value="Registrarme">
+            </form>
+
+            <p class="mensaje" id="mensajeRegistro"></p>
+
+            <a href="#" id="irLogin">¿Ya tienes cuenta? Inicia sesión</a>
+
+        </section>
+
+
+        <!-- MENÚ PRINCIPAL -->
+        <section id="menu" style="display: none;">
+
+            <h2 id="bienvenida"></h2>
+            <p id="perfilActual"></p>
+
+            <button class="btn" id="btnMuro" data-perfiles="administrador constructor cliente">
+                1 - Calcular muro de ladrillo
+            </button>
+
+            <button class="btn" id="btnViga" data-perfiles="administrador constructor cliente">
+                2 - Calcular viga de hormigón
+            </button>
+
+            <button class="btn" id="btnColumna" data-perfiles="administrador constructor cliente">
+                3 - Calcular columnas de hormigón
+            </button>
+
+            <button class="btn" id="btnContrapiso" data-perfiles="administrador constructor cliente">
+                4 - Calcular contrapisos
+            </button>
+
+            <button class="btn" id="btnTecho" data-perfiles="administrador constructor cliente">
+                5 - Calcular techo
+            </button>
+
+            <button class="btn" id="btnPiso" data-perfiles="administrador constructor cliente">
+                6 - Calcular pisos
+            </button>
+
+            <button class="btn" id="btnPintura" data-perfiles="administrador constructor cliente">
+                7 - Calcular pintura
+            </button>
+
+            <button class="btn" id="btnHistorial" data-perfiles="administrador constructor cliente">
+                Ver historial de cálculos
+            </button>
+
+            <button class="btn" id="btnHistorial" data-perfiles="administrador constructor cliente">
+                Ver historial de cálculos
+            </button>
+
+            <button class="btn" id="btnUsuarios" data-perfiles="administrador">
+                Ver usuarios registrados
+            </button>
+
+            <button class="btn" id="btnSalir">
+                8 - Salir
+            </button>
+
+            <div id="resultado"></div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <small>
+            Duvan Nicolás Prieto | Miller Aragonez
+            <br>
+            FET &copy; 2026
+        </small>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
